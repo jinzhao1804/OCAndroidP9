@@ -1,6 +1,5 @@
 package fr.opc.practice.p9a11y
 
-import android.content.res.ColorStateList
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
@@ -21,11 +20,16 @@ class Case3Activity : AppCompatActivity() {
                 // Validation de la saisie : minimum 3 caractères
                 val isValid = textLength > 2
                 binding.validateButton.isEnabled = isValid
-                binding.pseudoEdit.backgroundTintList = if (isValid) {
-                    ColorStateList.valueOf(resources.getColor(R.color.green400, theme))
+
+                // Changer la couleur de la bordure du champ de saisie
+                val borderColor = if (isValid) {
+                    resources.getColor(R.color.green400, theme) // Vert pour valide
                 } else {
-                    ColorStateList.valueOf(resources.getColor(R.color.red400, theme))
+                    resources.getColor(R.color.red400, theme) // Rouge pour invalide
                 }
+
+                // Appliquer la couleur à la bordure du champ de saisie
+                binding.pseudoInputLayout.boxStrokeColor = borderColor
 
                 // Affichage ou masquage du message d'erreur avec une suggestion
                 if (isValid) {

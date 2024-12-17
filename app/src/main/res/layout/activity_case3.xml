@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Case3Activity">
 
     <LinearLayout
@@ -35,7 +36,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="@string/pseudo"
-            android:importantForAccessibility="yes">
+            android:importantForAccessibility="yes"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true"
+            app:boxStrokeErrorColor="@color/red400" > >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/pseudoEdit"
