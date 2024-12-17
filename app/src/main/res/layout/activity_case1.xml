@@ -5,14 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".Case1Activity"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:importantForAccessibility="yes"
+    android:contentDescription="@string/layout_description">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cas_1"
-        android:textSize="40sp"/>
-
+        android:textSize="40sp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="@string/cas_1_description"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,20 +24,26 @@
         android:gravity="center_vertical"
         android:background="@color/beige"
         android:minHeight="90dp"
-        android:padding="4dp">
+        android:padding="4dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="@string/quantity_layout_description">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/demo_product_name"
-            android:textSize="60px"
-            android:layout_weight="1"/>
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/demo_product_name_description"/>
 
         <ImageButton
             android:id="@+id/removeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_remove"
-            />
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/remove_button_description"/>
 
         <TextView
             android:id="@+id/quantityText"
@@ -43,16 +52,17 @@
             tools:text="0"
             android:textSize="60px"
             android:layout_margin="20dp"
-            android:textColor="@color/gray400"/>
+            android:textColor="@color/black"
+            android:importantForAccessibility="yes"
+            />
 
         <ImageButton
             android:id="@+id/addButton"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_add"
-            />
-
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/add_button_description"/>
 
     </LinearLayout>
 

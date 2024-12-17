@@ -15,4 +15,18 @@
     <string name="validate">Valider</string>
     <string name="demo_product_name">Nom du produit</string>
 
+//added code
+        <!-- String to announce the updated quantity -->
+        <string name="quantity_updated">The quantity is now %1$d</string>
+
+        <!-- Other strings for accessibility -->
+        <string name="layout_description">Main layout for the case 1 activity</string>
+        <string name="cas_1_description">Case 1 title</string>
+        <string name="demo_product_name_description">Demo product name</string>
+        <string name="remove_button_description">Remove item</string>
+        <string name="quantity_text_description">Current quantity</string>
+        <string name="add_button_description">Add item</string>
+        <string name="quantity_layout_description">Layout containing product and quantity controls</string>
+
+
 </resources>
