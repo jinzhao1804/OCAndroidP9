@@ -29,7 +29,7 @@
                 android:id="@+id/productImage"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/cookie_amirali_mirhashemian_unsplash"
+                android:src="@drawable/cookie"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -37,6 +37,7 @@
                 />
 
             <ImageButton
+                android:contentDescription="@string/favourite_button_description"
                 android:id="@+id/favouriteButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
