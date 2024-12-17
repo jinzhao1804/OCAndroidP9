@@ -6,7 +6,7 @@
     <string name="cas_1">Cas 1 :</string>
     <string name="impossible_d_avoir_une_quantit_n_gative">Impossible d\'avoir une quantité négative</string>
     <string name="cas_2">Cas 2 :</string>
-    <string name="cd_ajouter_aux_favoris">Ajouter aux favoris</string>
+    <string name="cd_ajouter_aux_favoris">Favoris ajouter</string>
     <string name="ajouter">Ajouter</string>
     <string name="demo_cookie_text">Cookies au chocolat</string>
     <string name="recette_ajout_au_panier">Recette ajoutée au panier</string>
@@ -16,6 +16,8 @@
     <string name="demo_product_name">Nom du produit</string>
 
 //added code
+
+    // case 1
         <!-- String to announce the updated quantity -->
         <string name="quantity_updated">The quantity is now %1$d</string>
 
@@ -28,5 +30,9 @@
         <string name="add_button_description">Add item</string>
         <string name="quantity_layout_description">Layout containing product and quantity controls</string>
 
+
+    //case 2
+
+    <string name="cd_retirer_des_favoris">Favoris retirer</string>
 
 </resources>

@@ -44,7 +44,6 @@
                 android:backgroundTint="#99FFFFFF"
                 app:layout_constraintTop_toTopOf="@id/productImage"
                 app:layout_constraintEnd_toEndOf="@id/productImage"
-                android:contentDescription="@string/cd_ajouter_aux_favoris"
                 android:padding="12dp"
                 />
 
@@ -77,5 +76,14 @@
 
 
     </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </Button>
 
 </LinearLayout>
