@@ -35,4 +35,11 @@
 
     <string name="cd_retirer_des_favoris">Favoris retirer</string>
 
+    //case 3
+
+    <string name="invalid_input">Input invalid, pseudonyme should be at least 3 letters</string>
+    <string name="invalid_input_suggestion">Assurez-vous que votre pseudonyme fait plus de 2 caractères. Essayez d"'"ajouter des chiffres ou des lettres supplémentaires.</string>
+
+
+
 </resources>

@@ -15,16 +15,26 @@ class Case3Activity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        // Gérer les changements dans le champ de texte
         binding.pseudoEdit.doOnTextChanged { text, _, _, _ ->
             text?.length?.let { textLength ->
-                binding.validateButton.isEnabled = textLength > 2
-                binding.pseudoEdit.backgroundTintList = if (textLength > 2) {
+                // Validation de la saisie : minimum 3 caractères
+                val isValid = textLength > 2
+                binding.validateButton.isEnabled = isValid
+                binding.pseudoEdit.backgroundTintList = if (isValid) {
                     ColorStateList.valueOf(resources.getColor(R.color.green400, theme))
                 } else {
                     ColorStateList.valueOf(resources.getColor(R.color.red400, theme))
                 }
+
+                // Affichage ou masquage du message d'erreur avec une suggestion
+                if (isValid) {
+                    binding.errorMessage.visibility = android.view.View.GONE
+                } else {
+                    binding.errorMessage.visibility = android.view.View.VISIBLE
+                    binding.errorMessage.text = getString(R.string.invalid_input_suggestion)
+                }
             }
         }
-        binding.validateButton.isEnabled = false
     }
 }

@@ -1,41 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Case3Activity"
-    android:orientation="vertical">
+    tools:context=".Case3Activity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cas_3"
-        style="@style/TextAppearance.MaterialComponents.Headline2"
-        android:layout_gravity="center_horizontal"
-        />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pseudo"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-
-        />
-
-    <EditText
-        android:id="@+id/pseudoEdit"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/validateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/validate"
-        />
+        <!-- Titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cas_3"
+            style="@style/TextAppearance.MaterialComponents.Headline2"
+            android:layout_gravity="center_horizontal" />
 
-</LinearLayout>
+        <!-- Label Pseudonyme -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pseudo"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/pseudo"
+            android:labelFor="@id/pseudoEdit" />
+
+        <!-- TextInputLayout pour le champ de saisie -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pseudoInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/pseudo"
+            android:importantForAccessibility="yes">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pseudoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:importantForAccessibility="yes"
+                android:autofillHints="username"
+                android:contentDescription="@string/pseudo"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Message d'erreur avec suggestion -->
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:text="@string/invalid_input"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/invalid_input_suggestion" />
+
+        <!-- Bouton de validation -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/validateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/validate"
+            android:enabled="false" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
