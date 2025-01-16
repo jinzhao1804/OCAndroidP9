@@ -61,7 +61,7 @@ class Case2Activity : AppCompatActivity() {
         // Handle the custom action (navigate to recipe screen) when clicked
         binding.recipeCard.apply {
             // Set content description for accessibility
-            contentDescription = "Recipe card. Double tap to navigate to the recipe details."
+            contentDescription = "Recipe card. One tap to navigate to the recipe details."
 
             setOnClickListener {
                 // Perform the desired action when card is clicked
