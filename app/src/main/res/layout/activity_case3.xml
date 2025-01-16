@@ -48,7 +48,8 @@
                 android:importantForAccessibility="yes"
                 android:autofillHints="username"
                 android:contentDescription="@string/pseudo"
-                android:inputType="text" />
+                android:inputType="text"
+                app:hintTextColor="@color/black"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Message d'erreur avec suggestion -->
@@ -69,6 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/validate"
+            android:contentDescription="@string/validate_button_description"
             android:enabled="false" />
 
     </LinearLayout>
