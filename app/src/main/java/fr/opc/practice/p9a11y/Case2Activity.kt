@@ -50,7 +50,7 @@ class Case2Activity : AppCompatActivity() {
                 // Define a custom action for single gesture navigation (to navigate to the recipe screen)
                 val navigateAction = AccessibilityNodeInfo.AccessibilityAction(
                     AccessibilityNodeInfo.ACTION_CLICK,
-                    "Naviguer vers la recette"
+                    "one tap to Naviguer vers la recette"
                 )
 
                 // Add the custom action to the view's accessibility node info
