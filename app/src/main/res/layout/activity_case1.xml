@@ -39,8 +39,8 @@
 
         <ImageButton
             android:id="@+id/removeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:src="@drawable/ic_remove"
             android:importantForAccessibility="yes"
             android:contentDescription="@string/remove_button_description"/>
@@ -58,8 +58,8 @@
 
         <ImageButton
             android:id="@+id/addButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:src="@drawable/ic_add"
             android:importantForAccessibility="yes"
             android:contentDescription="@string/add_button_description"/>

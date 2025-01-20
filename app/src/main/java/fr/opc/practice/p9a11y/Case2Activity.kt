@@ -28,7 +28,7 @@ class Case2Activity : AppCompatActivity() {
         }
 
         binding.addRecipeToBasket.apply {
-            contentDescription = "Add recipe to basket"
+          //  contentDescription = "Add recipe to basket"
             setOnClickListener {
                 Toast.makeText(this@Case2Activity, getString(R.string.recette_ajout_au_panier), Toast.LENGTH_SHORT).show()
                 announceForAccessibility("Recipe added to basket")
@@ -61,14 +61,14 @@ class Case2Activity : AppCompatActivity() {
         // Handle the custom action (navigate to recipe screen) when clicked
         binding.recipeCard.apply {
             // Set content description for accessibility
-            contentDescription = "Recipe card. One tap to navigate to the recipe details."
+            //contentDescription = "One tap to navigate to the recipe details."
 
             setOnClickListener {
                 // Perform the desired action when card is clicked
                 Toast.makeText(this@Case2Activity, "Naviguer vers la recette", Toast.LENGTH_SHORT).show()
 
                 // Announce the action for screen readers
-                announceForAccessibility("Navigating to recipe details")
+                announceForAccessibility("One tap to navigate to the recipe details.")
 
                 // TODO: Replace with actual navigation code, e.g., Intent to open a new Activity
             }

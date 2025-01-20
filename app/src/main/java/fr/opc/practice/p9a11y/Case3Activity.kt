@@ -15,8 +15,8 @@ class Case3Activity : AppCompatActivity() {
         setContentView(view)
 
         // Set content descriptions for accessibility
-        binding.pseudoEdit.contentDescription = getString(R.string.pseudo_input_description)
-        binding.validateButton.contentDescription = getString(R.string.validate_button_description)
+        //binding.pseudoEdit.contentDescription = getString(R.string.pseudo_input_description)
+        //binding.validateButton.contentDescription = getString(R.string.validate_button_description)
 
         // Gérer les changements dans le champ de texte
         binding.pseudoEdit.doOnTextChanged { text, _, _, _ ->

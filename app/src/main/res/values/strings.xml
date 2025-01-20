@@ -34,6 +34,9 @@
     //case 2
 
     <string name="cd_retirer_des_favoris">Favoris retirer</string>
+    <string name="round_button_description">a rounded circle</string>
+    <string name="add_product_to_basket">Add product to basket</string>
+    <string name="add">Ajouter</string>
 
     //case 3
 
@@ -43,6 +46,8 @@
     <string name="pseudo_input_description">Enter your username</string>
     <string name="validate_button_description">Validate your username</string>
     <string name="pseudo_hint">Enter pseudonyme here</string>
+
+
 
 
 </resources>
